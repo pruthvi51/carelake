@@ -1,0 +1,34 @@
+name: 'carelake'
+version: '1.0.0'
+config-version: 2
+
+profile: 'carelake'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  carelake:
+    staging:
+      +materialized: view
+      +schema: silver_staging
+    intermediate:
+      +materialized: table
+      +schema: silver_intermediate
+    dimensions:
+      +materialized: table
+      +schema: silver_dimensions
+    facts:
+      +materialized: table
+      +schema: silver_facts
+    marts:
+      +materialized: table
+      +schema: gold_marts
