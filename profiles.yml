@@ -1,0 +1,20 @@
+carelake:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'warehouse/carelake.duckdb'
+      threads: 4
+      extensions:
+        - parquet
+        - icu
+    prod:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'xy12345.us-east-1') }}"
+      user: "{{ env_var('SNOWFLAKE_USER', 'CARELAKE_PROD_USER') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD', '') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE', 'ANALYTICS_ENGINEER') }}"
+      database: "{{ env_var('SNOWFLAKE_DATABASE', 'CARELAKE_PROD') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE', 'COMPUTE_WH') }}"
+      schema: gold_marts
+      threads: 8
