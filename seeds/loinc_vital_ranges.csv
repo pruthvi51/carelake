@@ -1,0 +1,9 @@
+loinc_num,component,normal_low,normal_high,unit
+8480-6,Systolic blood pressure,90,120,mmHg
+8462-4,Diastolic blood pressure,60,80,mmHg
+8867-4,Heart rate,60,100,beats/min
+9279-1,Respiratory rate,12,20,breaths/min
+8310-5,Body temperature,97.0,99.0,degF
+2708-6,Oxygen saturation in Arterial blood by Pulse oximetry,95,100,%
+2093-3,Cholesterol in Serum or Plasma,125,200,mg/dL
+2345-7,Glucose in Serum or Plasma,70,99,mg/dL
