@@ -1,0 +1,7 @@
+measure_id,measure_name,domain,target_percentage
+CBP,Controlling High Blood Pressure,Cardiovascular,72.5
+CDC_HBA1C,Comprehensive Diabetes Care - HbA1c Poor Control (>9%),Endocrine,18.0
+BCS,Breast Cancer Screening,Prevention,74.0
+COL,Colorectal Cancer Screening,Prevention,71.0
+AMB,Ambulatory Care Emergency Dept Visits / 1000 Member Months,Utilization,45.0
+PCR,Plan All-Cause Readmissions Rate,Quality,8.5
