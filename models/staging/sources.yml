@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: bronze
+    description: "Bronze raw landing tables from Synthea ingestion"
+    tables:
+      - name: patients
+        description: "Raw Synthea patients master demographic records"
+      - name: encounters
+        description: "Raw Synthea outpatient, inpatient, and emergency encounters"
+      - name: conditions
+        description: "Raw Synthea clinical diagnoses and ICD-10 codes"
+      - name: observations
+        description: "Raw Synthea vitals and laboratory observations"
+      - name: claims
+        description: "Raw Synthea insurance claims and billing records"
+      - name: medications
+        description: "Raw Synthea RxNorm medication dispensing records"
