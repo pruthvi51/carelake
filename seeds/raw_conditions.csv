@@ -1,0 +1,6 @@
+START,STOP,PATIENT,ENCOUNTER,CODE,DESCRIPTION
+2020-01-15,,p-001,enc-101,E11.9,Type 2 diabetes mellitus without complications
+2018-06-10,,p-002,enc-102,I10,Essential primary hypertension
+2021-03-22,,p-002,enc-102,I25.10,Atherosclerotic heart disease of native coronary artery
+2015-09-01,2022-08-10,p-003,enc-103,N18.3,Chronic kidney disease stage 3
+2023-11-12,,p-005,enc-105,J45.909,Unspecified asthma uncomplicated
