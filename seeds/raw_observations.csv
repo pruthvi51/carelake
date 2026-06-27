@@ -1,0 +1,7 @@
+DATE,PATIENT,ENCOUNTER,CODE,DESCRIPTION,VALUE,UNITS
+2024-01-10 09:15:00,p-001,enc-101,8480-6,Systolic blood pressure,124,mmHg
+2024-01-10 09:15:00,p-001,enc-101,8462-4,Diastolic blood pressure,82,mmHg
+2024-02-15 14:30:00,p-002,enc-102,8480-6,Systolic blood pressure,158,mmHg
+2024-02-15 14:30:00,p-002,enc-102,8462-4,Diastolic blood pressure,98,mmHg
+2024-03-01 11:20:00,p-003,enc-103,8867-4,Heart rate,112,beats/min
+2024-04-05 16:15:00,p-005,enc-105,9279-1,Respiratory rate,24,breaths/min

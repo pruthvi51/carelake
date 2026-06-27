@@ -1,0 +1,6 @@
+Id,BIRTHDATE,DEATHDATE,FIRST,LAST,GENDER,RACE,ETHNICITY,ADDRESS,CITY,STATE,ZIP
+p-001,1980-05-12,,Alice,Smith,F,white,nonhispanic,123 Main St,Boston,MA,02108
+p-002,1965-11-23,,Bob,Jones,M,black,nonhispanic,456 Oak Ave,Cambridge,MA,02138
+p-003,1950-02-14,2022-08-10,Carol,Davis,F,white,nonhispanic,789 Elm Rd,Somerville,MA,02143
+p-004,1992-09-30,,David,Wilson,M,asian,nonhispanic,101 Pine St,Boston,MA,02115
+p-005,1978-07-04,,Elena,Rodriguez,F,hispanic,hispanic,202 Maple Dr,Quincy,MA,02169
