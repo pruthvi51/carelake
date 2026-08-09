@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: mart_readmission_30d
+    description: "Inpatient 30-day readmissions tracking CMS hospital quality metrics"
+    columns:
+      - name: index_encounter_id
+        description: "Primary key of index inpatient hospital encounter"
+        tests:
+          - unique
+          - not_null
+      - name: is_30day_readmission
+        description: "Binary flag indicating whether readmission occurred within 30 days"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [0, 1]
+
+  - name: mart_length_of_stay
+    description: "Length of stay aggregates grouped by encounter class"
+    columns:
+      - name: encounter_class
+        tests:
+          - unique
+          - not_null
+
+  - name: mart_chronic_condition_cohorts
+    description: "Prevalence matrix and financial association of chronic illnesses"
+    columns:
+      - name: condition_description
+        tests:
+          - not_null
