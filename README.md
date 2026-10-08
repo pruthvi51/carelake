@@ -20,3 +20,16 @@ Production-grade, contract-enforced Medallion Lakehouse architecture engineering
 * PySpark Ingestion Engine         * Conformed Dimensions & Facts        * Contract-Enforced Marts
 * Quarantine Error Diverter        * MetricFlow Semantic Layer           * Sub-second BI Query Engine
 ```
+
+## Research Paper & Citation
+The full 6-page IEEE technical report is available at [paper/carelake_technical_report.pdf](paper/carelake_technical_report.pdf).
+
+```bibtex
+@article{gattu2026carelake,
+  author = {Gattu, Pruthvi Nag},
+  title = {CareLake: Engineering a Governed, Contract-Enforced Medallion Lakehouse for Enterprise Clinical Telemetry},
+  journal = {Technical Report},
+  year = {2026},
+  url = {https://github.com/pruthvi51/carelake}
+}
+```
