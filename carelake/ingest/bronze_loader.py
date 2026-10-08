@@ -1,12 +1,17 @@
 """
 PySpark Bronze Ingestion Job with Two-Phase Quarantine Error Diverter.
 """
-import os
-import sys
 from pathlib import Path
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 from carelake.ingest.schemas import PATIENT_SCHEMA, ENCOUNTER_SCHEMA
+
+__all__ = [
+    "create_spark_session",
+    "ingest_table_with_quarantine",
+    "PATIENT_SCHEMA",
+    "ENCOUNTER_SCHEMA",
+]
 
 def create_spark_session(app_name: str = "CareLake-BronzeIngest") -> SparkSession:
     return (

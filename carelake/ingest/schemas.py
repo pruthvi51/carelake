@@ -2,7 +2,7 @@
 PySpark Schemas for Bronze Ingestion Quarantine Diverter.
 """
 from pyspark.sql.types import (
-    StructType, StructField, StringType, DoubleType, IntegerType, TimestampType, DateType
+    StructType, StructField, StringType, DoubleType, TimestampType, DateType
 )
 
 PATIENT_SCHEMA = StructType([

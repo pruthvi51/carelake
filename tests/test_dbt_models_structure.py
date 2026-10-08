@@ -10,7 +10,7 @@ def test_model_files_exist():
         "models/marts/mart_readmission_30d.sql"
     ]
     for path in expected:
-        assert (root / path).exists() or True
+        assert (root / path).exists()
 
 def test_seeds_exist():
     root = Path(__file__).parent.parent
