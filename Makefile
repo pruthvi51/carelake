@@ -1,3 +1,7 @@
+PYTHON ?= $(shell if [ -f ../.venv/bin/python3 ]; then echo ../.venv/bin/python3; elif [ -f .venv/bin/python3 ]; then echo .venv/bin/python3; else which python3; fi)
+PYTEST ?= $(shell if [ -f ../.venv/bin/pytest ]; then echo ../.venv/bin/pytest; elif [ -f .venv/bin/pytest ]; then echo .venv/bin/pytest; else which pytest; fi)
+STREAMLIT ?= $(shell if [ -f ../.venv/bin/streamlit ]; then echo ../.venv/bin/streamlit; elif [ -f .venv/bin/streamlit ]; then echo .venv/bin/streamlit; else which streamlit; fi)
+
 .PHONY: help setup ingest-bronze test demo bench paper clean
 
 help:
@@ -13,16 +17,16 @@ setup:
 	uv pip install -e ".[dev]"
 
 ingest-bronze:
-	python3 -m carelake.ingest.bronze_loader --raw-dir ../healthdata-platform-infra/data/output/small --output-dir warehouse/bronze
+	$(PYTHON) -m carelake.ingest.bronze_loader --raw-dir seeds --output-dir warehouse/bronze
 
 test:
-	pytest -v tests/
+	$(PYTEST) -v tests/
 
 demo:
-	streamlit run app/streamlit_app.py
+	$(STREAMLIT) run app/streamlit_app.py
 
 bench:
-	python3 -m carelake.benchmarks.run_benchmark
+	$(PYTHON) -m carelake.benchmarks.run_benchmark
 
 paper:
 	cd paper && tectonic carelake_technical_report.tex
