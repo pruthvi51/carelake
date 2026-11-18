@@ -123,8 +123,7 @@ st.sidebar.markdown(
     "- **Silver:** Kimball Star Schema (`dim_patient`, `fact_encounter`)\n"
     "- **Gold:** CMS HRRP & Actuarial Marts"
 )
-st.sidebar.markdown("### Research & Docs")
-st.sidebar.markdown("[📄 IEEE Technical Report (5 Pages)](paper/carelake_technical_report.pdf)")
+st.sidebar.markdown("### Docs")
 st.sidebar.markdown("[📘 System Runbook & Triage](docs/RUNBOOK.md)")
 st.sidebar.markdown("[⚡ Benchmark Methodology](docs/BENCHMARKS.md)")
 st.sidebar.markdown("---")

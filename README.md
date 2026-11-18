@@ -3,7 +3,6 @@
 Production-grade, contract-enforced clinical Medallion Lakehouse engineering longitudinal Electronic Health Record (EHR) telemetry and medical claims into sub-second analytical data products using **PySpark Ingestion with Quarantine Error Routing**, **Apache Iceberg**, **dbt-DuckDB / Snowflake**, and **MetricFlow**.
 
 [![CI](https://github.com/pruthvi51/carelake/actions/workflows/ci.yml/badge.svg)](https://github.com/pruthvi51/carelake/actions/workflows/ci.yml)
-[![Technical Paper](https://img.shields.io/badge/paper-IEEE%20PDF-red.svg)](paper/carelake_technical_report.pdf)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![PySpark: Core](https://img.shields.io/badge/PySpark-3.5%20Core-E25A1C?logo=apachespark&logoColor=white)](carelake/ingest/)
 [![Engine: DuckDB](https://img.shields.io/badge/DuckDB-Vectorized-FFF000?logo=duckdb&logoColor=black)](models/)
@@ -205,9 +204,6 @@ carelake/
 │   ├── intermediate/            # Silver enrichment and feature views
 │   ├── marts/                   # Gold analytical marts (CMS HRRP, PMPM)
 │   └── staging/                 # De-identified Silver staging models
-├── paper/
-│   ├── carelake_technical_report.tex  # 5-Page IEEE technical report source
-│   └── carelake_technical_report.pdf  # Compiled research paper
 ├── seeds/                       # Seed reference tables (ICD-10, LOINC, HEDIS)
 ├── tests/                       # Pytest unit & data quality test suite
 ├── Makefile                     # Developer workflow automation
@@ -217,23 +213,7 @@ carelake/
 
 ---
 
-## 9. Research Paper & Citation
-
-The 5-page IEEE technical report detailing architectural trade-offs, formal quarantine mathematics, and performance benchmarks is available at [paper/carelake_technical_report.pdf](paper/carelake_technical_report.pdf).
-
-```bibtex
-@article{gattu2026carelake,
-  author = {Gattu, Pruthvi Nag},
-  title = {CareLake: Engineering a Governed, Contract-Enforced Medallion Lakehouse for Enterprise Clinical Telemetry},
-  journal = {Technical Report},
-  year = {2026},
-  url = {https://github.com/pruthvi51/carelake}
-}
-```
-
----
-
-## 10. Operations & Governance
+## 9. Operations & Governance
 
 * [Operations Runbook & Pipeline Triage](docs/RUNBOOK.md)
 * [Performance Benchmark Specification](docs/BENCHMARKS.md)
